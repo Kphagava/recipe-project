@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-quick-info',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./quick-info.component.css']
 })
 export class QuickInfoComponent {
-
+@Input() recipeDifficulty: string = "unkown difficulty"
 }

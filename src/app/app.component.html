@@ -1,7 +1,13 @@
 <app-header></app-header>
-<app-recipe-details></app-recipe-details>
+<app-recipe-details
+    [recipeTitle]="recipe.title"
+    [recipeAuthor]="recipe.author"
+    [recipeDescription]="recipe.description"
+></app-recipe-details>
 <app-recipe-video></app-recipe-video>
-<app-quick-info></app-quick-info>
+<app-quick-info 
+    [recipeDifficulty]="recipe.difficulty"
+></app-quick-info>
 <app-ingredients></app-ingredients>
 <app-instructions></app-instructions>
 <app-nutrition-info></app-nutrition-info>

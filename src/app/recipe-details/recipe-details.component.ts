@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-recipe-details',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./recipe-details.component.css']
 })
 export class RecipeDetailsComponent {
-
+  @Input() recipeTitle: string = "unknown recipe"
+  @Input() recipeAuthor: string = "unknown author"
+  @Input() recipeDescription: string = "no description"
 }
