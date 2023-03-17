@@ -13,6 +13,8 @@ import { NutritionInfoComponent } from './nutrition-info/nutrition-info.componen
 import { SuggestionsComponent } from './suggestions/suggestions.component';
 import { FooterComponent } from './footer/footer.component';
 import { SearchComponent } from './search/search.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
+import { DetailsComponent } from './pages/details/details.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { SearchComponent } from './search/search.component';
     NutritionInfoComponent,
     SuggestionsComponent,
     FooterComponent,
-    SearchComponent
+    SearchComponent,
+    HomepageComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
