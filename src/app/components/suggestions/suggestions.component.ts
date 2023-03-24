@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { VirtualStorageService } from '../services/virtual-storage.service';
+import { VirtualStorageService } from '../../services/virtual-storage.service';
 
 @Component({
   selector: 'app-suggestions',

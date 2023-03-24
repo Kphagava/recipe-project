@@ -1,11 +1,12 @@
 <div class="py-5 flex justify-between items-center">
-    <img src="/assets/Images/cookbook_logo.png" alt="logo" width="150px">
+    <img routerLink="home" src="/assets/Images/cookbook_logo.png" class="cursor-pointer" alt="logo" width="150px">
     <div class="flex space-x-6">
-        <button type="button">Explore</button>
-        <button type="button">Video recipes</button>
-        <button type="button">Authors</button>
+        <button routerLink="home" type="button" class="hover:text-lime-700">Home</button>
+        <button routerLink="explore" type="button" class="hover:text-lime-700">Explore</button>
+        <button routerLink="authors" type="button" class="hover:text-lime-700">Authors</button>
+        <button routerLink="about" type="button" class="hover:text-lime-700">About</button>
     </div>
     <div>
-        <button type="button" class="bg-lime-600 h-10 px-4 rounded text-white font-medium">My Cookbook</button>
+        <button routerLink="mycookbook" type="button" class="bg-lime-600 h-10 px-4 rounded text-white font-medium hover:bg-lime-500">My Cookbook</button>
     </div>
 </div>

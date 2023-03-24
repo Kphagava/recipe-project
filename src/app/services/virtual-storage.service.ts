@@ -14,30 +14,10 @@ export class VirtualStorageService {
     title: 'Best lasagna of your lifetime',
     description: 'in only 40 minutes cook beautifyl lasagna',
     date: '17/03/2023',
-    time: 40,
+    time: '40 minutes',
     ingridients: ['Pasta', 'Bolognese', 'Beshamel', 'Cheese'],
     difficulty: RecipeDifficulty.Hard
-  },
-  {
-    id: 2,
-    author: 'Nana Ninoshvili',
-    title: 'Mushroom soup',
-    description: 'creamy mushroom soup at home',
-    date: '17/03/2023',
-    time: 15,
-    ingridients: ['Mushrooms', 'Cream', 'Cheese', 'Pepper'],
-    difficulty: RecipeDifficulty.Medium
-  },
-  {
-    id: 3,
-    author: 'Giorgi Giorgadze',
-    title: 'Scrumbled eggs',
-    description: 'Easiest eggs you\'ll ever eat',
-    date: '17/03/2023',
-    time: 2,
-    ingridients: ['eggs', 'creame', 'cheese'],
-    difficulty: RecipeDifficulty.Easy
-  },
+  }
 ];
 
   add(item: Recipe) {

@@ -1,12 +1,77 @@
-<div class="cardGroup">
-    <div class="shadow rounded-sm p-2 " *ngFor="let item of virtualStorage.items">
-        <h3>
-            {{item.title}}
-        </h3>
-        <p>
-            {{item.description}}
-        </p> 
+<div class="flex">
+    <div class="bg-orange-50 rounded-md w-1/2 flex flex-col justify-center items-center">
+        <div class="w-2/3 space-y-4">
+            <div>
+                <h1 class="text-2xl font-semibold">Learn and share beautiful recipes</h1>
+            </div>
+            <div>
+                <p>Explore thousands of recipes from amazing creators on our platform </p>
+            </div>
+            <div class="space-x-2 flex">
+                <input type="text" class="flex-1 h-10 bg-white border-2 border-neutral-200 rounded">
+                <button type="button"
+                    class="bg-lime-600 h-10 px-4 rounded text-white font-medium hover:bg-lime-500">Explore</button>
+            </div>
+        </div>
+    </div>
+    <div class="w-1/2">
+        <img src="/assets/Images/banner.png" alt="banner" class=" rounded-r-md">
+    </div>
+</div>
+<div class="flex flex-col items-center mt-10">
+    <h2 class="text-lg font-medium">Explore recipes around the world</h2>
+    <div class="flex space-x-2 mt-4">
+        <button type="button" class="bg-gray-100 h-10 px-4 rounded hover:bg-gray-200">Hot dishes</button>
+        <button type="button" class="bg-gray-100 h-10 px-4 rounded hover:bg-gray-200">Breakfast</button>
+        <button type="button" class="bg-gray-100 h-10 px-4 rounded hover:bg-gray-200">Dessert</button>
+        <button type="button" class="bg-gray-100 h-10 px-4 rounded hover:bg-gray-200">Pasta</button>
+        <button type="button" class="bg-gray-100 h-10 px-4 rounded hover:bg-gray-200">Vegeterian</button>
+        <button type="button" class="bg-gray-100 h-10 px-4 rounded hover:bg-gray-200">Chinese</button>
+        <button type="button" class="bg-gray-100 h-10 px-4 rounded hover:bg-gray-200">Fish</button>
+        <button type="button" class="bg-gray-100 h-10 px-4 rounded hover:bg-gray-200">Snacks</button>
+    </div>
+</div>
+<hr class="mt-6">
+
+<div class="mt-10">
+    <h2 class="font-medium text-lg">For the meat lovers</h2>
+    <div class="flex space-x-5 mt-4">
+        <app-recipe-card *ngFor="let recipe of suggestions" [recipe]="recipe"></app-recipe-card>
+    </div>
+
+    <div class="mt-10">
+        <h1 class="font-medium text-lg">Vegeterian gems</h1>
+        <div class="flex space-x-5 mt-4">
+            <app-recipe-card *ngFor="let recipe of suggestions2" [recipe]="recipe"></app-recipe-card>
+        </div>
     </div>
 </div>
 
-  
+<div class="mt-10">
+    <h1 class="font-medium text-lg">Desserts</h1>
+    <div class="flex space-x-5 mt-4">
+        <app-recipe-card *ngFor="let recipe of suggestions3" [recipe]="recipe"></app-recipe-card>
+    </div>
+</div>
+
+
+<div class="flex bg-orange-50 my-24 py-10 justify-center items-center rounded-lg">
+    <div class="flex flex-col w-1/2 items-center space-y-5">
+        <div>
+            <h2 class="text-xl font-medium">Ready to join us?</h2>
+        </div>
+        <div>
+            <p class="text-center text-neutral-700 text-sm">You will get all your questions answered on this website,
+                but if you need to speak to a human,
+                feel free to contact us through various channels
+            </p>
+        </div>
+        <div class="flex space-x-2">
+            <button type="button"
+                class="h-10 px-4 rounded text-lime-800 font-medium hover:text-lime-900 hover:bg-white">Contact
+                us</button>
+            <button type="button" class="bg-lime-600 h-10 px-4 rounded text-white font-medium hover:bg-lime-500">Get
+                Started</button>
+        </div>
+    </div>
+</div>

@@ -4,33 +4,33 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { RecipeDetailsComponent } from './recipe-details/recipe-details.component';
-import { RecipeVideoComponent } from './recipe-video/recipe-video.component';
-import { QuickInfoComponent } from './quick-info/quick-info.component';
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { InstructionsComponent } from './instructions/instructions.component';
 import { NutritionInfoComponent } from './nutrition-info/nutrition-info.component';
-import { SuggestionsComponent } from './suggestions/suggestions.component';
-import { FooterComponent } from './footer/footer.component';
-import { SearchComponent } from './search/search.component';
+import { SuggestionsComponent } from './components/suggestions/suggestions.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { DetailsComponent } from './pages/details/details.component';
+import { MyCookBookComponent } from './pages/my-cook-book/my-cook-book.component';
+import { RecipeCardComponent } from './components/recipe-card/recipe-card.component';
+import { ExploreComponent } from './pages/explore/explore.component';
+import { AuthorsComponent } from './pages/authors/authors.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    RecipeDetailsComponent,
-    RecipeVideoComponent,
-    QuickInfoComponent,
     IngredientsComponent,
     InstructionsComponent,
     NutritionInfoComponent,
     SuggestionsComponent,
-    FooterComponent,
-    SearchComponent,
     HomepageComponent,
-    DetailsComponent
+    DetailsComponent,
+    MyCookBookComponent,
+    RecipeCardComponent,
+    ExploreComponent,
+    AuthorsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
